@@ -11,6 +11,7 @@ import { CategoriesCreateComponent } from './components/categories/categories-cr
 import { StudentsCreateComponent } from './components/students/students-create/students-create.component';
 import { EnrollmentsCreateComponent } from './components/enrollments/enrollments-create/enrollments-create.component';
 import { CategoriesUpdateComponent } from './components/categories/categories-update/categories-update.component';
+import { CategoriesDeleteComponent } from './components/categories/categories-delete/categories-delete.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: "categories/update/:id",
     component: CategoriesUpdateComponent,
+  },
+  {
+    path: "categories/delete/:id",
+    component: CategoriesDeleteComponent,
   },
   {
     path: "categories/create",

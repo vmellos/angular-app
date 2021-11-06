@@ -8,6 +8,6 @@
             <input matInput placeholder="Descrição" [(ngModel)]="category.description" name="description">
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="cancel()">Cancel</button>
-    <button mat-raised-button (click)="updateCategory()" color="primary">Salvar</button>
+    <button mat-stroked-button (click)="cancel()">Voltar</button>
+    <button mat-stroked-button (click)="updateCategory()" class="btn-action">Atualizar</button>
 </mat-card>

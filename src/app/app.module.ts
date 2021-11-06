@@ -24,16 +24,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+
+
 
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { CategoriesReadComponent } from './components/categories/categories-read/categories-read.component';
-import { CategoriesRead2Component } from './components/categories/categories-read2/categories-read2.component';
 import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
 import { CategoriesUpdateComponent } from './components/categories/categories-update/categories-update.component';
+import { CategoriesDeleteComponent } from './components/categories/categories-delete/categories-delete.component';
 
 
 @NgModule({
@@ -51,8 +52,8 @@ import { CategoriesUpdateComponent } from './components/categories/categories-up
     CoursesCreateComponent,
     CategoriesCreateComponent,
     CategoriesReadComponent,
-    CategoriesRead2Component,
-    CategoriesUpdateComponent,  
+    CategoriesUpdateComponent,
+    CategoriesDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,8 +70,7 @@ import { CategoriesUpdateComponent } from './components/categories/categories-up
     MatFormFieldModule,
     MatInputModule,
     MatTableModule,
-    MatPaginatorModule,
-    MatSortModule
+    MatIconModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

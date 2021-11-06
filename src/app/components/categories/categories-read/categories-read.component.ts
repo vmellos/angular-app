@@ -10,7 +10,7 @@ import { CategoriesService } from '../categories.service';
 export class CategoriesReadComponent implements OnInit {
   
   categories: Category[]
-  displayedColumns = ['name', 'description', 'action']
+  displayedColumns = ['name', 'description', 'edit', 'delete']
 
   constructor(private categoriesService: CategoriesService) {
     this.categories = []

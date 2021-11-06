@@ -13,7 +13,7 @@ export class CategoriesUpdateComponent implements OnInit {
   category: Category;
 
   constructor(
-    private CategoriesService: CategoriesService,
+    private categoriesService: CategoriesService,
     private router: Router,
     private route: ActivatedRoute) {
     this.category = {
@@ -24,12 +24,16 @@ export class CategoriesUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id') as string;
-    this.CategoriesService.readById(id).subscribe(category => {
+    this.categoriesService.readById(id).subscribe(category => {
       this.category = category;
     })
   }
 
   updateCategory(): void {
+    this.categoriesService.update(this.category).subscribe(() => {
+      this.categoriesService.showMessage('Salvo com sucesso')
+      this.router.navigate(['/categories'])
+    })
   }
 
   cancel(): void {
