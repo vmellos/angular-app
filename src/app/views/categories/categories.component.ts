@@ -20,7 +20,7 @@ export class CategoriesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToCategaryCreate(): void {
+  navigateToCategoryCreate(): void {
     this.router.navigate(['/categories/create'])
   }
 }

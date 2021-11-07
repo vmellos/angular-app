@@ -26,6 +26,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 
+import {MatSelectModule} from '@angular/material/select';
 
 
 import { FormsModule } from '@angular/forms';
@@ -35,6 +36,9 @@ import { CategoriesReadComponent } from './components/categories/categories-read
 import { MatTableModule } from '@angular/material/table';
 import { CategoriesUpdateComponent } from './components/categories/categories-update/categories-update.component';
 import { CategoriesDeleteComponent } from './components/categories/categories-delete/categories-delete.component';
+import { CoursesReadComponent } from './components/courses/courses-read/courses-read.component';
+import { CoursesDeleteComponent } from './components/courses/courses-delete/courses-delete.component';
+import { CoursesUpdateComponent } from './components/courses/courses-update/courses-update.component';
 
 
 @NgModule({
@@ -54,6 +58,9 @@ import { CategoriesDeleteComponent } from './components/categories/categories-de
     CategoriesReadComponent,
     CategoriesUpdateComponent,
     CategoriesDeleteComponent,
+    CoursesReadComponent,
+    CoursesDeleteComponent,
+    CoursesUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,6 +78,7 @@ import { CategoriesDeleteComponent } from './components/categories/categories-de
     MatInputModule,
     MatTableModule,
     MatIconModule,
+    MatSelectModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
