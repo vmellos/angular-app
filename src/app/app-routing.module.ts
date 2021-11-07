@@ -6,9 +6,9 @@ import { CoursesComponent } from "./views/courses/courses.component";
 import { CategoriesComponent } from "./views/categories/categories.component";
 import { StudentsComponent } from "./views/students/students.component";
 import { EnrollmentsComponent } from "./views/enrollments/enrollments.component";
-import { CoursesCreateComponent } from './components/manage-courses/courses-create/courses-create.component';
-import { CoursesDeleteComponent } from './components/manage-courses/courses-delete/courses-delete.component';
-import { CoursesUpdateComponent } from './components/manage-courses/courses-update/courses-update.component';
+import { CoursesCreateComponent } from './components/courses/courses-create/courses-create.component';
+import { CoursesDeleteComponent } from './components/courses/courses-delete/courses-delete.component';
+import { CoursesUpdateComponent } from './components/courses/courses-update/courses-update.component';
 
 import { CategoriesCreateComponent } from './components/categories/categories-create/categories-create.component';
 import { StudentsCreateComponent } from './components/students/students-create/students-create.component';

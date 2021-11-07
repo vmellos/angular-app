@@ -12,7 +12,7 @@ import { StudentsComponent } from './views/students/students.component';
 import { HomeComponent } from './views/home/home.component';
 import { StudentsCreateComponent } from './components/students/students-create/students-create.component';
 import { EnrollmentsCreateComponent } from './components/enrollments/enrollments-create/enrollments-create.component';
-import { CoursesCreateComponent } from './components/manage-courses/courses-create/courses-create.component';
+import { CoursesCreateComponent } from './components/courses/courses-create/courses-create.component';
 import { CategoriesCreateComponent } from './components/categories/categories-create/categories-create.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -36,9 +36,9 @@ import { CategoriesReadComponent } from './components/categories/categories-read
 import { MatTableModule } from '@angular/material/table';
 import { CategoriesUpdateComponent } from './components/categories/categories-update/categories-update.component';
 import { CategoriesDeleteComponent } from './components/categories/categories-delete/categories-delete.component';
-import { CoursesReadComponent } from './components/manage-courses/courses-read/courses-read.component';
-import { CoursesDeleteComponent } from './components/manage-courses/courses-delete/courses-delete.component';
-import { CoursesUpdateComponent } from './components/manage-courses/courses-update/courses-update.component';
+import { CoursesReadComponent } from './components/courses/courses-read/courses-read.component';
+import { CoursesDeleteComponent } from './components/courses/courses-delete/courses-delete.component';
+import { CoursesUpdateComponent } from './components/courses/courses-update/courses-update.component';
 
 
 @NgModule({
