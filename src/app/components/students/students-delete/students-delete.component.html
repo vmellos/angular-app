@@ -1,1 +1,28 @@
-<p>students-delete works!</p>
+<mat-card>
+    <mat-card-title>Excluir estudante</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="student.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]="student.email" name="email" disabled>
+        </mat-form-field>
+        <!-- <mat-form-field> -->
+            <!-- <input matInput placeholder="Status" [(ngModel)]="student.status" name="status"> -->
+        <!-- </mat-form-field> -->
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="student.phone" name="phone" disabled>
+        </mat-form-field>
+    </form>
+    <section>
+        <mat-slide-toggle 
+            [(ngModel)]="student.status"
+            name="status"
+            disabled
+            >
+          Status
+        </mat-slide-toggle>
+      </section>
+    <button mat-stroked-button (click)="cancel()">Voltar</button>
+    <button mat-stroked-button (click)="deleteStudent()" class="btn-action">Excluir</button>
+</mat-card>
