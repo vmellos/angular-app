@@ -16,6 +16,10 @@ import { EnrollmentsCreateComponent } from './components/enrollments/enrollments
 import { CategoriesUpdateComponent } from './components/categories/categories-update/categories-update.component';
 import { CategoriesDeleteComponent } from './components/categories/categories-delete/categories-delete.component';
 
+import { StudentsUpdateComponent } from './components/students/students-update/students-update.component';
+import { StudentsDeleteComponent } from './components/students/students-delete/students-delete.component';
+
+
 const routes: Routes = [
   {
     path: "",
@@ -60,6 +64,14 @@ const routes: Routes = [
   {
     path: "students/create",
     component: StudentsCreateComponent
+  },
+  {
+    path: "students/update/:id",
+    component: StudentsUpdateComponent
+  },
+  {
+    path: "students/delete/:id",
+    component: StudentsDeleteComponent
   },
   {
     path: "enrollments",

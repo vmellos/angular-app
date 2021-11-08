@@ -1,1 +1,28 @@
-<p>students-create works!</p>
+<mat-card>
+    <mat-card-title>Novo estudante</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="student.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]="student.email" name="email">
+        </mat-form-field>
+        <!-- <mat-form-field> -->
+            <!-- <input matInput placeholder="Status" [(ngModel)]="student.status" name="status"> -->
+        <!-- </mat-form-field> -->
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="student.phone" name="phone">
+        </mat-form-field>
+    </form>
+    <section>
+        <mat-slide-toggle 
+            [(ngModel)]="student.status"
+            name="status"
+            
+            >
+          Status
+        </mat-slide-toggle>
+      </section>
+    <button mat-stroked-button (click)="cancel()">Voltar</button>
+    <button mat-stroked-button (click)="createStudent()" class="btn-action">Salvar</button>
+</mat-card>

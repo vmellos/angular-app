@@ -25,6 +25,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 
 import {MatSelectModule} from '@angular/material/select';
 
@@ -39,6 +40,9 @@ import { CategoriesDeleteComponent } from './components/categories/categories-de
 import { CoursesReadComponent } from './components/courses/courses-read/courses-read.component';
 import { CoursesDeleteComponent } from './components/courses/courses-delete/courses-delete.component';
 import { CoursesUpdateComponent } from './components/courses/courses-update/courses-update.component';
+import { StudentsReadComponent } from './components/students/students-read/students-read.component';
+import { StudentsDeleteComponent } from './components/students/students-delete/students-delete.component';
+import { StudentsUpdateComponent } from './components/students/students-update/students-update.component';
 
 
 @NgModule({
@@ -61,6 +65,9 @@ import { CoursesUpdateComponent } from './components/courses/courses-update/cour
     CoursesReadComponent,
     CoursesDeleteComponent,
     CoursesUpdateComponent,
+    StudentsReadComponent,
+    StudentsDeleteComponent,
+    StudentsUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,6 +86,7 @@ import { CoursesUpdateComponent } from './components/courses/courses-update/cour
     MatTableModule,
     MatIconModule,
     MatSelectModule,
+    MatSlideToggleModule
     ],
   providers: [],
   bootstrap: [AppComponent]

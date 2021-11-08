@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { HeaderService } from 'src/app/components/template/header/header.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { HeaderService } from 'src/app/components/template/header/header.service
 })
 export class StudentsComponent implements OnInit {
 
-  constructor(private headerService: HeaderService) {
+  constructor(private headerService: HeaderService, private router: Router) {
     headerService.headerData = {
       title: 'Estudantes',
       icon: '',
@@ -18,5 +19,7 @@ export class StudentsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  navigateToCategoryCreate(): void {
+    this.router.navigate(['/students/create'])
+  }
 }
