@@ -3,7 +3,7 @@
     <form>
         <mat-form-field appearance="fill">
             <mat-label>Estudante</mat-label>
-            <mat-select [(value)]="enrollments.students">
+            <mat-select [(value)]="enrollments.student">
                 <mat-option *ngFor="let student of students" [value]="student.id" ngDefaultControl>
                     {{student.name}}
                 </mat-option>
@@ -11,7 +11,7 @@
         </mat-form-field>
         <mat-form-field appearance="fill">
             <mat-label>Curso</mat-label>
-            <mat-select [(value)]="enrollments.courses">
+            <mat-select [(value)]="enrollments.course">
                 <mat-option *ngFor="let course of courses" [value]="course.id" ngDefaultControl>
                     {{course.name}}
                 </mat-option>

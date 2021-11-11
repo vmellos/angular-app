@@ -1,1 +1,23 @@
-<p>enrollments-delete works!</p>
+<mat-card>
+    <mat-card-title>Excluir inscrição</mat-card-title>
+    <form>
+        <mat-form-field appearance="fill">
+            <mat-label>Estudante</mat-label>
+            <mat-select [(value)]="enrollments.student">
+                <mat-option *ngFor="let student of students" [value]="student.id" ngDefaultControl>
+                    {{student.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Curso</mat-label>
+            <mat-select [(value)]="enrollments.course">
+                <mat-option *ngFor="let course of courses" [value]="course.id" ngDefaultControl>
+                    {{course.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+    <button mat-stroked-button (click)="cancel()">Voltar</button>
+    <button mat-stroked-button (click)="deleteEnrollment()" class="btn-action">Excluir</button>
+</mat-card>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Enrollment } from '../enrollment.model';
+import { EnrollmentsService } from '../enrollments.service';
 
 @Component({
   selector: 'app-enrollments-read',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./enrollments-read.component.scss']
 })
 export class EnrollmentsReadComponent implements OnInit {
+  enrollments: Enrollment[]
 
-  constructor() { }
+  displayedColumns = ['student', 'course', 'edit', 'delete' ]
+  constructor(private enrollmentService: EnrollmentsService) {
+    this.enrollments = []
+   }
 
   ngOnInit(): void {
+    this.enrollmentService.read().subscribe(enrollments => {
+      let { results }: any = enrollments
+      this.enrollments = results;
+    })
   }
 
 }

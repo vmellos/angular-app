@@ -25,8 +25,8 @@ export class EnrollmentsCreateComponent implements OnInit {
     this.students = []
 
     this.enrollments = {
-      students: {},
-      courses: {}
+      student: {},
+      course: {}
     }
   }
 

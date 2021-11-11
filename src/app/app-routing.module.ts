@@ -81,6 +81,15 @@ const routes: Routes = [
     path: "enrollments",
     component: EnrollmentsComponent
   },
+
+  {
+    path: "enrollments/update/:id",
+    component: EnrollmentsUpdateComponent
+  },
+  {
+    path: "enrollments/delete/:id",
+    component: EnrollmentsDeleteComponent
+  },
   {
     path: "enrollments/create",
     component: EnrollmentsCreateComponent

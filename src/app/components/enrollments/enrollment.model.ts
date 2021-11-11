@@ -21,6 +21,6 @@ export interface Course {
 
 export interface Enrollment {
     id?: string | null;
-    students: {};
-    courses: {};
+    student: {};
+    course: {};
 }
