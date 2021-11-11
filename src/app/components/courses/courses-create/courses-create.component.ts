@@ -40,7 +40,6 @@ export class CoursesCreateComponent implements OnInit {
 
   createCourse(): void {
     this.coursesService.create(this.course).subscribe(course => {
-      console.log(this.course)
       this.coursesService.showMessage('Salvo')
       this.router.navigate(['/courses'])
     })

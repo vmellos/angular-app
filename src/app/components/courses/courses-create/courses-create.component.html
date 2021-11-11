@@ -4,9 +4,6 @@
         <mat-form-field>
             <input matInput placeholder="Nome do curso" [(ngModel)]="course.name" name="name">
         </mat-form-field>
-        <mat-form-field>
-            <input matInput placeholder="Descrição" [(ngModel)]="course.description" name="description">
-        </mat-form-field>
         <mat-form-field appearance="fill">
             <mat-label>Categoria</mat-label>
             <mat-select [(value)]="course.category">
@@ -15,6 +12,10 @@
               </mat-option>
             </mat-select>
           </mat-form-field>
+          <mat-form-field>
+            <mat-label>Descrição</mat-label>
+            <textarea matInput placeholder="..." [(ngModel)]="course.description" name="description"></textarea>
+        </mat-form-field>
     </form>
     <button mat-stroked-button (click)="cancel()">Voltar</button>
     <button mat-stroked-button (click)="createCourse()" class="btn-action">Salvar</button>

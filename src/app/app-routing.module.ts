@@ -2,22 +2,26 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from "./views/home/home.component";
+
 import { CoursesComponent } from "./views/courses/courses.component";
-import { CategoriesComponent } from "./views/categories/categories.component";
-import { StudentsComponent } from "./views/students/students.component";
-import { EnrollmentsComponent } from "./views/enrollments/enrollments.component";
 import { CoursesCreateComponent } from './components/courses/courses-create/courses-create.component';
 import { CoursesDeleteComponent } from './components/courses/courses-delete/courses-delete.component';
 import { CoursesUpdateComponent } from './components/courses/courses-update/courses-update.component';
 
+import { CategoriesComponent } from "./views/categories/categories.component";
 import { CategoriesCreateComponent } from './components/categories/categories-create/categories-create.component';
-import { StudentsCreateComponent } from './components/students/students-create/students-create.component';
-import { EnrollmentsCreateComponent } from './components/enrollments/enrollments-create/enrollments-create.component';
-import { CategoriesUpdateComponent } from './components/categories/categories-update/categories-update.component';
 import { CategoriesDeleteComponent } from './components/categories/categories-delete/categories-delete.component';
+import { CategoriesUpdateComponent } from './components/categories/categories-update/categories-update.component';
 
-import { StudentsUpdateComponent } from './components/students/students-update/students-update.component';
+import { StudentsComponent } from "./views/students/students.component";
+import { StudentsCreateComponent } from './components/students/students-create/students-create.component';
 import { StudentsDeleteComponent } from './components/students/students-delete/students-delete.component';
+import { StudentsUpdateComponent } from './components/students/students-update/students-update.component';
+
+import { EnrollmentsComponent } from "./views/enrollments/enrollments.component";
+import { EnrollmentsCreateComponent } from './components/enrollments/enrollments-create/enrollments-create.component';
+import { EnrollmentsDeleteComponent } from './components/enrollments/enrollments-delete/enrollments-delete.component';
+import { EnrollmentsUpdateComponent } from './components/enrollments/enrollments-update/enrollments-update.component';
 
 
 const routes: Routes = [
